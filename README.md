@@ -1,5 +1,5 @@
 # Menos é Mais #projectOne
-This will be my restart into personal projects, since you start working as a full-time employee you don't have enough time to focus on personal Apps, so this is my try to change this. Basically will be an app to track weight loss by user logging into the app and also takin pictures of his body. The screen I have in mind now is 2 pictures side by side, one is the baseline and the another one is the actual to compare.
+This will be my restart into personal projects, since I start working as a full-time employee I didn't have enough time to focus on personal Apps, so here is my way to change it. Basically will be an app to track weight loss by user logging into the app and also takin pictures of his body. 
 
 Home Screen | Compare Screen
 ------------ | -------------
