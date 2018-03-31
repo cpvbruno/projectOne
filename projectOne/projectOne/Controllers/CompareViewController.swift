@@ -21,10 +21,8 @@ class CompareViewController: UIViewController, UIImagePickerControllerDelegate, 
     }
     
     func getBaseline() {
-        if UserDefaults.standard.object(forKey: "baseline") != nil {
-            let data = UserDefaults.standard.string(forKey: "baseline")
-            let dataDecoded : Data = Data(base64Encoded: data!, options: .ignoreUnknownCharacters)!
-            compareImage.image = UIImage(data: dataDecoded)
+        if General.baselineSelfie != nil {
+            baselineImage.image = UIImage(data: General.baselineSelfie?.image as! Data)
         }
     }
     
@@ -47,14 +45,7 @@ class CompareViewController: UIViewController, UIImagePickerControllerDelegate, 
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         let image = info[UIImagePickerControllerEditedImage] as! UIImage
-        
-        if UserDefaults.standard.object(forKey: "baseline") != nil {
-            UserDefaults.standard.set(base64(image: image, format: ImageFormat.png), forKey: "compareImage")
-            compareImage.image = image
-        } else {
-            UserDefaults.standard.set(base64(image: image, format: ImageFormat.png), forKey: "baseline")
-            baselineImage.image = image
-        }
+        handleSelfie(image: image)
         dismiss(animated:true, completion: nil)
     }
     
@@ -71,6 +62,20 @@ class CompareViewController: UIViewController, UIImagePickerControllerDelegate, 
         }
         return imageData?.base64EncodedString()
     }
-
+    
+    private func handleSelfie(image: UIImage) {
+        let service = SelfieService()
+        if General.baselineSelfie != nil {
+            let newActualSelfie = Selfie()
+            newActualSelfie.isActualCompare = true
+            newActualSelfie.image = NSData(data: UIImagePNGRepresentation(image)!)
+            service.save(obj: newActualSelfie)
+        } else {
+            let newBaseline = Selfie()
+            newBaseline.isBaseline = true
+            newBaseline.image = NSData(data: UIImagePNGRepresentation(image)!)
+            service.save(obj: newBaseline)
+        }
+    }
     
 }

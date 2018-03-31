@@ -22,6 +22,9 @@
 		9DD588CA2070328700248182 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD588C92070328700248182 /* Weight.swift */; };
 		9DD588CC2070330700248182 /* WeightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD588CB2070330700248182 /* WeightService.swift */; };
 		9DD588CE207039C900248182 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD588CD207039C900248182 /* IntroViewController.swift */; };
+		9DD5E6A7207043CA00CD17C2 /* Selfie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5E6A6207043CA00CD17C2 /* Selfie.swift */; };
+		9DD5E6A92070443A00CD17C2 /* SelfiesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5E6A82070443A00CD17C2 /* SelfiesService.swift */; };
+		9DD5E6AB207044E000CD17C2 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD5E6AA207044E000CD17C2 /* General.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +48,9 @@
 		9DD588C92070328700248182 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
 		9DD588CB2070330700248182 /* WeightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightService.swift; sourceTree = "<group>"; };
 		9DD588CD207039C900248182 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		9DD5E6A6207043CA00CD17C2 /* Selfie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Selfie.swift; sourceTree = "<group>"; };
+		9DD5E6A82070443A00CD17C2 /* SelfiesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelfiesService.swift; sourceTree = "<group>"; };
+		9DD5E6AA207044E000CD17C2 /* General.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				9D129FEB2070215200CF39B2 /* Metric.swift */,
+				9DD5E6AA207044E000CD17C2 /* General.swift */,
 			);
 			path = Defaults;
 			sourceTree = "<group>";
@@ -153,6 +160,7 @@
 			children = (
 				9DD588C6207031E500248182 /* Database.swift */,
 				9DD588CB2070330700248182 /* WeightService.swift */,
+				9DD5E6A82070443A00CD17C2 /* SelfiesService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -160,6 +168,7 @@
 		9DD588C82070322E00248182 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				9DD5E6A6207043CA00CD17C2 /* Selfie.swift */,
 				9DD588C92070328700248182 /* Weight.swift */,
 			);
 			path = Models;
@@ -324,13 +333,16 @@
 				9DC42A49206F6B90009830C6 /* HomeViewController.swift in Sources */,
 				9DC42A5D206F7B70009830C6 /* GeneralEx.swift in Sources */,
 				9D129FEE2070259100CF39B2 /* SettingsViewController.swift in Sources */,
+				9DD5E6AB207044E000CD17C2 /* General.swift in Sources */,
 				9DC42A60206F7DB0009830C6 /* CompareViewController.swift in Sources */,
 				9D129FEC2070215200CF39B2 /* Metric.swift in Sources */,
 				9DC42A5A206F7045009830C6 /* BaseViewController.swift in Sources */,
 				9DD588C7207031E500248182 /* Database.swift in Sources */,
+				9DD5E6A7207043CA00CD17C2 /* Selfie.swift in Sources */,
 				9DC42A45206F6B90009830C6 /* AppDelegate.swift in Sources */,
 				9DD588CE207039C900248182 /* IntroViewController.swift in Sources */,
 				9DD588CA2070328700248182 /* Weight.swift in Sources */,
+				9DD5E6A92070443A00CD17C2 /* SelfiesService.swift in Sources */,
 				9DD588CC2070330700248182 /* WeightService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
