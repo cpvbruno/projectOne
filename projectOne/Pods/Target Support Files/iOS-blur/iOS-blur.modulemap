@@ -1,0 +1,6 @@
+framework module iOS_blur {
+  umbrella header "iOS-blur-umbrella.h"
+
+  export *
+  module * { export * }
+}
