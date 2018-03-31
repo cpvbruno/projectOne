@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  WeightService.swift
 //  projectOne
 //
 //  Created by Bruno Pantaleão N. Gonçalves on 31/03/18.
@@ -7,10 +7,8 @@
 //
 
 import Foundation
+import RealmSwift
 
-extension String {
-    var floatValue: Float {
-        return (self as NSString).floatValue
-    }
+class WeightService: Database<Weight> {
+    
 }
-

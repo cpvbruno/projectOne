@@ -1,5 +1,5 @@
 //
-//  File.swift
+//  Metric.swift
 //  projectOne
 //
 //  Created by Bruno Pantaleão N. Gonçalves on 31/03/18.
@@ -8,9 +8,7 @@
 
 import Foundation
 
-extension String {
-    var floatValue: Float {
-        return (self as NSString).floatValue
-    }
+enum Metric {
+    case onz
+    case kg
 }
-

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3934C00014C66124C42B600A /* Pods_projectOne.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B41463C620228294AE68641 /* Pods_projectOne.framework */; };
+		9D129FEC2070215200CF39B2 /* Metric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D129FEB2070215200CF39B2 /* Metric.swift */; };
+		9D129FEE2070259100CF39B2 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D129FED2070259100CF39B2 /* SettingsViewController.swift */; };
 		9DC42A45206F6B90009830C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC42A44206F6B90009830C6 /* AppDelegate.swift */; };
 		9DC42A49206F6B90009830C6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC42A48206F6B90009830C6 /* HomeViewController.swift */; };
 		9DC42A4C206F6B90009830C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DC42A4A206F6B90009830C6 /* Main.storyboard */; };
@@ -16,12 +18,18 @@
 		9DC42A5A206F7045009830C6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC42A59206F7045009830C6 /* BaseViewController.swift */; };
 		9DC42A5D206F7B70009830C6 /* GeneralEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC42A5C206F7B70009830C6 /* GeneralEx.swift */; };
 		9DC42A60206F7DB0009830C6 /* CompareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC42A5F206F7DB0009830C6 /* CompareViewController.swift */; };
+		9DD588C7207031E500248182 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD588C6207031E500248182 /* Database.swift */; };
+		9DD588CA2070328700248182 /* Weight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD588C92070328700248182 /* Weight.swift */; };
+		9DD588CC2070330700248182 /* WeightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD588CB2070330700248182 /* WeightService.swift */; };
+		9DD588CE207039C900248182 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD588CD207039C900248182 /* IntroViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3224EAEDF69CC308D394FECF /* Pods-projectOne.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectOne.debug.xcconfig"; path = "Pods/Target Support Files/Pods-projectOne/Pods-projectOne.debug.xcconfig"; sourceTree = "<group>"; };
 		59961C7D78C002B45928473C /* Pods-projectOne.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-projectOne.release.xcconfig"; path = "Pods/Target Support Files/Pods-projectOne/Pods-projectOne.release.xcconfig"; sourceTree = "<group>"; };
 		6B41463C620228294AE68641 /* Pods_projectOne.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_projectOne.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D129FEB2070215200CF39B2 /* Metric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Metric.swift; sourceTree = "<group>"; };
+		9D129FED2070259100CF39B2 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		9DC42A41206F6B90009830C6 /* projectOne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = projectOne.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC42A44206F6B90009830C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DC42A48206F6B90009830C6 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +40,11 @@
 		9DC42A59206F7045009830C6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		9DC42A5C206F7B70009830C6 /* GeneralEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralEx.swift; sourceTree = "<group>"; };
 		9DC42A5F206F7DB0009830C6 /* CompareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompareViewController.swift; sourceTree = "<group>"; };
+		9DD588C220702F5200248182 /* projectOne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = projectOne.entitlements; sourceTree = "<group>"; };
+		9DD588C6207031E500248182 /* Database.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		9DD588C92070328700248182 /* Weight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weight.swift; sourceTree = "<group>"; };
+		9DD588CB2070330700248182 /* WeightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightService.swift; sourceTree = "<group>"; };
+		9DD588CD207039C900248182 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +76,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9D129FE920701FBA00CF39B2 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9DC42A48206F6B90009830C6 /* HomeViewController.swift */,
+				9DC42A5F206F7DB0009830C6 /* CompareViewController.swift */,
+				9D129FED2070259100CF39B2 /* SettingsViewController.swift */,
+				9DD588CD207039C900248182 /* IntroViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9D129FEA2070214000CF39B2 /* Defaults */ = {
+			isa = PBXGroup;
+			children = (
+				9D129FEB2070215200CF39B2 /* Metric.swift */,
+			);
+			path = Defaults;
+			sourceTree = "<group>";
+		};
 		9DC42A38206F6B90009830C6 = {
 			isa = PBXGroup;
 			children = (
@@ -84,14 +116,17 @@
 		9DC42A43206F6B90009830C6 /* projectOne */ = {
 			isa = PBXGroup;
 			children = (
-				9DC42A5B206F7B67009830C6 /* Extensions */,
+				9DD588C220702F5200248182 /* projectOne.entitlements */,
+				9DD588C5207031D800248182 /* Data */,
+				9DD588C82070322E00248182 /* Models */,
+				9D129FEA2070214000CF39B2 /* Defaults */,
+				9D129FE920701FBA00CF39B2 /* Controllers */,
 				9DC42A58206F7031009830C6 /* Base */,
-				9DC42A48206F6B90009830C6 /* HomeViewController.swift */,
-				9DC42A5F206F7DB0009830C6 /* CompareViewController.swift */,
+				9DC42A5B206F7B67009830C6 /* Extensions */,
 				9DC42A4A206F6B90009830C6 /* Main.storyboard */,
-				9DC42A4D206F6B91009830C6 /* Assets.xcassets */,
 				9DC42A4F206F6B91009830C6 /* LaunchScreen.storyboard */,
 				9DC42A44206F6B90009830C6 /* AppDelegate.swift */,
+				9DC42A4D206F6B91009830C6 /* Assets.xcassets */,
 				9DC42A52206F6B91009830C6 /* Info.plist */,
 			);
 			path = projectOne;
@@ -111,6 +146,23 @@
 				9DC42A5C206F7B70009830C6 /* GeneralEx.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9DD588C5207031D800248182 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9DD588C6207031E500248182 /* Database.swift */,
+				9DD588CB2070330700248182 /* WeightService.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		9DD588C82070322E00248182 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9DD588C92070328700248182 /* Weight.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +201,17 @@
 					9DC42A40206F6B90009830C6 = {
 						CreatedOnToolsVersion = 9.3;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -260,9 +323,15 @@
 			files = (
 				9DC42A49206F6B90009830C6 /* HomeViewController.swift in Sources */,
 				9DC42A5D206F7B70009830C6 /* GeneralEx.swift in Sources */,
+				9D129FEE2070259100CF39B2 /* SettingsViewController.swift in Sources */,
 				9DC42A60206F7DB0009830C6 /* CompareViewController.swift in Sources */,
+				9D129FEC2070215200CF39B2 /* Metric.swift in Sources */,
 				9DC42A5A206F7045009830C6 /* BaseViewController.swift in Sources */,
+				9DD588C7207031E500248182 /* Database.swift in Sources */,
 				9DC42A45206F6B90009830C6 /* AppDelegate.swift in Sources */,
+				9DD588CE207039C900248182 /* IntroViewController.swift in Sources */,
+				9DD588CA2070328700248182 /* Weight.swift in Sources */,
+				9DD588CC2070330700248182 /* WeightService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +475,7 @@
 			baseConfigurationReference = 3224EAEDF69CC308D394FECF /* Pods-projectOne.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = projectOne/projectOne.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SR9992X3G;
 				INFOPLIST_FILE = projectOne/Info.plist;
@@ -422,6 +492,7 @@
 			baseConfigurationReference = 59961C7D78C002B45928473C /* Pods-projectOne.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = projectOne/projectOne.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4SR9992X3G;
 				INFOPLIST_FILE = projectOne/Info.plist;

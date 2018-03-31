@@ -14,6 +14,8 @@ class HomeViewController: BaseViewController {
     @IBOutlet weak var weightValue: UILabel!
     @IBOutlet weak var compareView: UIView!
     
+    var currentWeight = Weight()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -27,7 +29,12 @@ class HomeViewController: BaseViewController {
     }
     
     func getActualWeight() {
-        weightValue.text = String(describing: UserDefaults.standard.float(forKey: "weight"))
+        let service = WeightService()
+        let historic = service.getLastOrDefault()
+        if historic != nil {
+            self.currentWeight = historic as! Weight
+            weightValue.text = String(currentWeight.val)
+        }
     }
     
     @objc func pushCompare() {
@@ -39,20 +46,31 @@ class HomeViewController: BaseViewController {
         let alert = UIAlertController(title: "Atualizar Peso", message: "Peso atual", preferredStyle: .alert)
         
         alert.addTextField { (textField) in
-            textField.placeholder = "74"
+            if self.currentWeight.val > 0.00 {
+                textField.text = String(self.currentWeight.val)
+            }
             textField.keyboardType = .numbersAndPunctuation
         }
+        
+        alert.addAction(UIAlertAction(title: "Cancelar", style: .cancel, handler: nil))
         
         alert.addAction(UIAlertAction(title: "Atualizar", style: .default, handler: { [weak alert] (_) in
             let textField = alert?.textFields![0]
             let weight = textField?.text
             if let weightValue = weight?.floatValue {
-                UserDefaults.standard.set(weightValue, forKey: "weight")
+                self.newWeight(weight: weightValue)
             }
             self.getActualWeight()
         }))
         
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func newWeight(weight: Float) {
+        let weightObj = Weight()
+        weightObj.val = weight
+        let service = WeightService()
+        service.save(obj: weightObj)
     }
     
 }
